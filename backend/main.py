@@ -8,8 +8,8 @@ from tempfile import NamedTemporaryFile
 from langchain_core.messages import HumanMessage
 import os
 
-from .graph import react_graph
-from .tools import send_html_email
+from graph import react_graph
+from tools import send_html_email
 
 app = FastAPI()
 
