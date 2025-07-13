@@ -5,7 +5,7 @@ from typing import TypedDict, Annotated, Optional
 from langgraph.graph.message import add_messages
 from langchain_core.messages import AnyMessage, SystemMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
-from .tools import divide, extract_text, send_html_email
+from tools import divide, extract_text, send_html_email
 
 # ───────────  shared state  ────────────────────────────────────────────
 class AgentState(TypedDict):
