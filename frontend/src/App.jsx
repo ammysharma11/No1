@@ -28,7 +28,7 @@ export default function App() {
       setLoading(true);
       setResult("Running agent… ⏳");
       const baseUrl = import.meta.env.VITE_BACKEND_URL;
-      const res = await fetch(`${baseUrl}/api/some-route`, {
+      const res = await fetch(`${baseUrl}/process/`, {
         method: "POST",
         body: data,
       });
