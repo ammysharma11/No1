@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+sendgrid
+langchain-core
+langgraph
+langchain-google-genai
+python-multipart
