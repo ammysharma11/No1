@@ -1,7 +1,7 @@
 from langgraph.graph import START, StateGraph
 from langgraph.prebuilt import ToolNode, tools_condition
-from .tools import divide, extract_text, send_html_email
-from .agent import assistant, AgentState
+from tools import divide, extract_text, send_html_email
+from agent import assistant, AgentState
 
 tools = [divide, extract_text, send_html_email]
 
