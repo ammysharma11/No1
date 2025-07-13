@@ -27,8 +27,8 @@ export default function App() {
     try {
       setLoading(true);
       setResult("Running agent… ⏳");
-
-      const res = await fetch("http://127.0.0.1:8000/process/", {
+      const baseUrl = import.meta.env.VITE_BACKEND_URL;
+      const res = await fetch(`${baseUrl}/api/some-route`, {
         method: "POST",
         body: data,
       });
